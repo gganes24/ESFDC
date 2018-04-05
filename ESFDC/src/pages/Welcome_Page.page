@@ -1,0 +1,28 @@
+<apex:page controller="Ctrl_ShoppingSearch">
+    <apex:form >
+        <apex:messages style="color: red;"/>
+        <apex:pageBlock id="pb">
+            <apex:pageBlockSection id="contact-table1" columns="1">
+               <table>
+                   <tr><td> <apex:outputLabel value="Search Product" /><apex:inputText value="{!searchstate}">
+                        <apex:actionSupport event="onkeyup" action="{!searchProducts}" reRender="pb1"/>                   
+                    </apex:inputText></td></tr>
+                </table>
+            </apex:pageBlockSection>
+            <apex:pageBlockTable value="{!lstWProducts}" var="p" id="pb1">
+                <apex:column headerValue="Product Name">
+                    <apex:outputLink value="">{!p.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column value="{!p.Cost__c}" headerValue="Price"/>
+                <apex:column value="{!p.Availablity__c}" headerValue="Available Quantity"/>
+                <apex:column headerValue="Selected Quantity">
+                    <apex:inputText value="{!p.Selected_Quantity__c}"/>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+         <table><tr>
+         <td><apex:commandButton value="Buy Now" action="{!reduceQuantity}"></apex:commandButton></td><td></td>
+         <td><apex:commandButton value="Add To Cart" action="{!Add2Cart}"/></td>
+         </tr></table> 
+    </apex:form>
+</apex:page>

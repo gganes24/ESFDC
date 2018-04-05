@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lightning DataTable Dev</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <namespacePrefix>ldt</namespacePrefix>
+    <types>
+        <members>clickedDtAction</members>
+        <members>datatableDev</members>
+        <members>doneSortingColumn</members>
+        <members>dtColumn</members>
+        <members>dtRow</members>
+        <members>initDatatable</members>
+        <members>sortColumnBy</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Action_Column</members>
+        <members>Items_Per_Page</members>
+        <members>Page_Next</members>
+        <members>Page_Prev</members>
+        <members>Pagination_Info</members>
+        <members>Search</members>
+        <members>Search_By_Column</members>
+        <members>Select_All</members>
+        <name>CustomLabel</name>
+    </types>
+    <types>
+        <members>CustomLabels</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>SLDS202</members>
+        <members>columnResizer</members>
+        <members>lodash</members>
+        <members>momenttz</members>
+        <name>StaticResource</name>
+    </types>
+    <version>36.0</version>
+</Package>

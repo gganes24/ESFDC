@@ -1,0 +1,21 @@
+<apex:page controller="ShowCartlist" >
+    <apex:form >
+        <apex:pageBlock id="Ol">
+             <apex:pageBlockTable value="{!lstCartProducts}" var="p" id="pc">
+                 <apex:column value="{!p.name}" headerValue="Bill Number"/>
+                 <apex:column value="{!p.Buyer_Name__c}" headerValue="Customer Name"/>
+                 <apex:column value="{!p.Name__c}" headerValue="Product Name"/>
+                 <apex:column value="{!p.Brand__c}" headerValue="Brand Name"/>
+                 <apex:column value="{!p.Quantity__c}" headerValue="Quantity"/>
+                 <apex:column value="{!p.Price__c}" headerValue="Price"/>
+                 <apex:column value="{!p.Date_of_Order__c}" headerValue="Date of Order"/>
+                 <apex:column value="{!p.Buyed__c}" headerValue="Cart product"/>
+            </apex:pageBlockTable>
+             <table><tr>
+         <td><apex:commandButton id="btnbcart" value="Buy Now" action="{!BuyCartProduct}" disabled="false"></apex:commandButton></td><td></td>
+
+         </tr></table> 
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

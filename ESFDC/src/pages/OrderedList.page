@@ -1,0 +1,17 @@
+<apex:page controller="ShowOrderlist" >
+    <apex:form >
+         
+        <apex:pageBlock id="Ol">
+             <apex:pageBlockTable value="{!lstOrderedProducts}" var="p" id="po">
+                 <apex:column value="{!p.name}" headerValue="Bill Number"/>
+                 <apex:column value="{!p.Buyer_Name__c}" headerValue="Customer Name"/>
+                 <apex:column value="{!p.Name__c}" headerValue="Product Name"/>
+                 <apex:column value="{!p.Brand__c}" headerValue="Brand Name"/>
+                 <apex:column value="{!p.Quantity__c}" headerValue="Quantity"/>
+                 <apex:column value="{!p.Price__c}" headerValue="Price"/>
+                 <apex:column value="{!p.Date_of_Order__c}" headerValue="Date of Order"/>
+                 <apex:column value="{!p.Buyed__c}" headerValue="Buyed"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

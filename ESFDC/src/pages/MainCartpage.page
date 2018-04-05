@@ -1,0 +1,19 @@
+<apex:page controller="Ctrl_MainCart">
+    <apex:form >
+        <apex:pageBlock id="pb">
+            <apex:pageBlockSection id="contact-table1" columns="1">
+               <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Search Product" />
+                    <apex:inputText value="{!scyState}">
+                   		<apex:actionSupport event="onkeyup" action="{!searchProducts}" reRender="pb1"/>                   
+                    </apex:inputText>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockTable value="{!lstProducts}" var="p" id="pb1">
+            	<apex:column headerValue="Product Name">
+                    <apex:outputLink value="/apex/Welcome_Page?id={!p.Name}&cname={!$CurrentPage.parameters.id}">{!p.Name}</apex:outputLink>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

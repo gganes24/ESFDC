@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Shopping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Shoppings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+        <picklistValues>
+            <masterLabel>LG</masterLabel>
+            <translation><!-- LG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panasonic</masterLabel>
+            <translation><!-- Panasonic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phlips</masterLabel>
+            <translation><!-- Phlips --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samsung</masterLabel>
+            <translation><!-- Samsung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sony</masterLabel>
+            <translation><!-- Sony --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cost --></label>
+        <name>Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Products --></label>
+        <name>Products__c</name>
+        <picklistValues>
+            <masterLabel>Air Conditioner</masterLabel>
+            <translation><!-- Air Conditioner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fridge</masterLabel>
+            <translation><!-- Fridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Television</masterLabel>
+            <translation><!-- Television --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Washing Machine</masterLabel>
+            <translation><!-- Washing Machine --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
