@@ -1,4 +1,8 @@
 trigger PushNotificationTrigger on Property__c (after update) {
+	/*
+	 ganesh
+	 testing trigger
+	*/
     
     /*
     for (Property__c property : Trigger.New) {
